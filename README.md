@@ -8,5 +8,9 @@ The Website is Responsive
 ![image](https://github.com/AvatarN03/The-Counter_Timer/assets/114817400/64cbd4af-f697-42bd-9c1b-c829a0a42358)
 
 
+
+
+-------
+
 The Preview of the Website:- 
 https://avatarn03.github.io/The-Counter_Timer/
