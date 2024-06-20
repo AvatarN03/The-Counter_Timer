@@ -8,7 +8,7 @@ function calculate() {
     const date = document.getElementById('date').value
     const time = document.getElementById('time').value
     const stop = document.getElementById('stop')
-    cal.disabled = true
+    
 
     const endTime = new Date(date + ' ' + time)
 
@@ -47,6 +47,7 @@ function calculatetime(endTime) {
         hours.innerHTML = Math.floor((timeLeft / (60 * 60)) % 24)
         minutes.innerHTML = Math.floor((timeLeft / 60) % 60)
         sec.innerHTML = Math.floor(timeLeft % 60)
+        cal.disabled = true
     }
     else {
         day.innerHTML = 0
