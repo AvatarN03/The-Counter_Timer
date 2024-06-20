@@ -3,11 +3,12 @@ window.onload = () => {
     document.getElementById('reset').onclick = reset;
 }
 
+const cal = document.getElementById('cal')
 function calculate() {
     const date = document.getElementById('date').value
     const time = document.getElementById('time').value
     const stop = document.getElementById('stop')
-    
+    cal.disabled = true
 
     const endTime = new Date(date + ' ' + time)
 
@@ -49,8 +50,10 @@ function calculatetime(endTime) {
 }
 
 function reset() {
-    document.getElementById('day').innerText = 0
-    document.getElementById('hours').innerText = 0
-    document.getElementById('minutes').innerText = 0
-    document.getElementById('sec').innerText = 0
+    // document.getElementById('day').innerHTML = 0
+    // document.getElementById('hours').innerHTML = 0
+    // document.getElementById('minutes').innerHTML = 0
+    // document.getElementById('sec').innerHTML = 0
+    window.location.reload()
+    cal.disabled = false
 }
