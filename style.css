@@ -169,7 +169,8 @@ button:hover{
         font-size: 42%;
     }
     .time{
-        width: 8rem;
+        width: 12rem;
+        font-size: 8.9rem;
     }
     .timer{
         flex-direction: column;
