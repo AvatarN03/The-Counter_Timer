@@ -17,8 +17,15 @@ function calculate() {
         lala = setInterval(() => { calculatetime(endTime) }, 1000)
     }
     stop.addEventListener('click',()=>{
-        clearInterval(lala)
-        lala = null
+        if(stop.innerHTML === 'Stop'){
+            stop.innerHTML = 'Start'
+            clearInterval(lala)
+            lala = null
+        }
+        else{
+            stop.innerHTML = 'Stop'
+            lala = setInterval(() => { calculatetime(endTime) }, 1000)
+        }
     })
 }
 
